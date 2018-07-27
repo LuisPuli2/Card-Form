@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div style="margin-left: 30px">
+		<h1>Click ok to ok</h1>
+		<!-- Trigger the modal with a button -->
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id ="button_modal">Ok</button>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <!-- <div class="modal-content"> -->
+	      	<!-- Formulario para tarjeta -->
+	      	<!-- <div class="page-wrapper"> -->
+			    <div class="sign-up-wrapper">
+			      <div class="sign-up-content">
+			        <h1>Total: $106.00 </h1>
+			        <p>Enter credit card details.</p>
+			      </div>
+			      <div class="sign-up-content">
+			        <form method="POST"  action=""> 
+			          <div class="form-block">
+			            <input type="tel" name="number" pattern="[0-9 ]*" data-conekta="card[number]" />
+			            <label>Card number</label>
+			          </div>
+			          <div class="form-block">
+			            <input type="text" name="name" data-conekta="card[name]" />
+			            <label>Your name</label>
+			          </div>
+			          <div class="form-block">
+			            <input type="tel" name="expiry" pattern="[0-9\/ ]*" data-conekta="card[exp_month]"/>
+			            <label>Valid until (MM/YY)</label>
+			          </div>
+			          <div class="form-block">
+			            <input type="tel" name="cvc" pattern="[0-9]*" data-conekta="card[cvc]"/>
+			            <label>Security number (CVC)</label>
+			          </div>
+			          <div class="form-block">
+			            <div class="card-wrapper"></div>
+			            <span><b>thanks to https://github.com/jessepollak/card</b></span>
+			          </div>
+			          <div class="form-block">
+			            <input type="submit" value="Submit">
+			          </div>
+			        </form>
+			      </div>
+			    </div>
+			<!-- </div> -->
+			<!-- Fin Formulario para tarjeta -->
+	      <!-- </div> -->
+	      
+	    </div>
+	 </div>
+	<!-- Fin Modal -->
+</body>
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Para animación -->
+	<script src="js/jquery.card.js"></script>
+	<script  src="js/script.js"></script>
+</html>

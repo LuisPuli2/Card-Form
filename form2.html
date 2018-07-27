@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form 2</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="sign-up-wrapper">
+      <div class="sign-up-content">
+        <h1>Total: 106,00 €</h1>
+        <p>Enter credit card details.</p>
+      </div>
+      <div class="sign-up-content">
+        <form>
+          <div class="form-block">
+            <input type="tel" name="number" pattern="[0-9 ]*" />
+            <label>Card number</label>
+          </div>
+          <div class="form-block">
+            <input type="text" name="name" />
+            <label>Your name</label>
+          </div>
+          <div class="form-block">
+            <input type="tel" name="expiry" pattern="[0-9\/ ]*" />
+            <label>Valid until (MM/YY)</label>
+          </div>
+          <div class="form-block">
+            <input type="tel" name="cvc" pattern="[0-9]*" />
+            <label>Security number (CVC)</label>
+          </div>
+          <div class="form-block">
+            <div class="card-wrapper"></div>
+            <span>thanks to https://github.com/jessepollak/card</span>
+          </div>
+          <div class="form-block">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery.card.js"></script>
+  <script  src="script2.js"></script>
+</html>

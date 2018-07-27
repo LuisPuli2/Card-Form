@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #2d2d2d;
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.07em;
+}
+
+.sign-up-wrapper {
+  background-color: white;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  border: 1px solid rgba(45, 45, 45, 0.6);
+  border-radius: 20px;
+  bottom: 0;
+  box-shadow: 0 0 10px 2px rgba(45, 45, 45, 0.5);
+  height: 775px;
+  /*min-height: 800px;*/
+  left: 0;
+  margin: auto;
+  min-width: 300px;
+  /*position: absolute;*/
+  right: 0;
+  top: 0;
+  max-width: 420px;
+}
+
+@media (max-width: 376px) {
+  .sign-up-wrapper {
+    height: 600px;
+  }
+}
+
+.sign-up-content {
+  margin: 2.5em;
+  text-align: center;
+}
+@media (max-width: 419px) {
+  .sign-up-content {
+    margin: 2.5em 1.8em;
+  }
+}
+.sign-up-content h1 {
+  letter-spacing: 0;
+}
+.sign-up-content p {
+  font-size: 1.65em;
+}
+
+form {
+  position: relative;
+}
+
+.form-block {
+  font-size: 1em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-block label {
+  color: #7d7d7d;
+  left: 13px;
+  line-height: 1.42857143;
+  position: absolute;
+  pointer-events: none;
+  top: 14px;
+  transition: 0.3s ease all;
+}
+.form-block [type="text"],
+.form-block [type="tel"],
+.form-block [type="submit"] {
+  appearance: "none";
+  -moz-appearance: "none";
+  -webkit-appearance: "none";
+  border-radius: 4px;
+  display: block;
+  height: 50px;
+  outline: none;
+  width: 100%;
+}
+.form-block [type="text"],
+.form-block [type="tel"] {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #2d2d2d;
+  line-height: 1.42857143;
+  padding: 18px 10px 0;
+  transition: 0.3s ease all;
+}
+.form-block [type="text"]:focus, .form-block [type="text"].input-filled,
+.form-block [type="tel"]:focus,
+.form-block [type="tel"].input-filled {
+  border-color: #19a069;
+}
+.form-block [type="text"]:focus + label, .form-block [type="text"].input-filled + label,
+.form-block [type="tel"]:focus + label,
+.form-block [type="tel"].input-filled + label {
+  color: #19a069;
+  font-size: 0.75em;
+  left: 12px;
+  top: 5px;
+}
+.form-block [type="text"]:hover,
+.form-block [type="tel"]:hover {
+  border-color: #19a069;
+}
+.form-block [type="text"]:hover, .form-block [type="text"]:focus,
+.form-block [type="tel"]:hover,
+.form-block [type="tel"]:focus {
+  box-shadow: 0 0 10px 0.5px rgba(25, 160, 105, 0.2);
+}
+.form-block [type="submit"] {
+  background-color: #19a069;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.form-block [type="submit"]:hover {
+  background-color: #189763;
+  box-shadow: 0 0 10px 0.5px rgba(25, 160, 105, 0.5);
+}
+
+.jp-card {
+  min-width: 240px !important;
+  text-align: left;
+}
+.jp-card .jp-card-front,
+.jp-card .jp-card-back {
+  background: rgba(132, 73, 59, 0.9) !important;
+}
+
+.card-wrapper + span {
+  font-size: 0.7em;
+  padding: 1px 3px;
+  text-align: right;
+}
